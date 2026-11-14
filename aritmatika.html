@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai Mahasiswa</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<p id="nt"></p>
+<p id="na"></p>
+<p id="nq"></p>
+<p id="nut"></p>
+<p id="nuas"></p>
+
+<hr>
+
+<p id="total"></p>
+<p id="rat"></p>
+<p id="text"></p>
+
+<script>
+    let x = 5;
+    let y = 7;
+    let z = x + y;
+    document.getElementById("demo").innerHTML = z;
+
+    let text, nt, na, nq, nut, nuas, tot, rat;
+
+    nt = 70;
+    na = 78;
+    nq = 89;
+    nut = 50;
+    nuas = 75;
+
+    tot = (nt*0.1) + (na*0.2) + (nq*0.05) + (nut*0.20) + (nuas*0.35);
+    rat = tot / 5;
+
+    if (tot > 90) {
+        text = "A";
+    } else if (tot > 80) {
+        text = "B";
+    } else if (tot > 70) {
+        text = "C";
+    } else if (tot > 60) {
+        text = "D";
+    } else {
+        text = "E";
+    }
+
+    document.getElementById("nt").innerHTML = "Nilai Tugas: " + nt;
+    document.getElementById("na").innerHTML = "Nilai Absen: " + na;
+    document.getElementById("nq").innerHTML = "Nilai Quis: " + nq;
+    document.getElementById("nut").innerHTML = "Nilai UTS: " + nut;
+    document.getElementById("nuas").innerHTML = "Nilai UAS: " + nuas;
+
+    document.getElementById("total").innerHTML = "Total Nilai: " + tot;
+    document.getElementById("rat").innerHTML = "Nilai Rata-rata: " + rat;
+    document.getElementById("text").innerHTML = "Keterangan: " + text;
+</script>
+
+</body>
+</html>

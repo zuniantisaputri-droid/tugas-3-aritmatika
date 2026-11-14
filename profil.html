@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: black (0, 0, 0);
+            font-size: 20px;
+            background-color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: auto;
+            width: 400px;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 13px;
+        }
+        label {display: block;}
+
+input[type=text] {
+  width: 400px;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #04AA6D;;
+  background-color:  #f2f2f2;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  min-width: 48%;
+  margin-bottom: 10px;
+}
+
+input[type=text], select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  min-width: 45%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  label,
+  input[type=text],
+  input[type=submit],
+  select, textarea {
+    flex: 100%;
+    min-width: 100%;
+  }
+}
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Top</h2>
+
+<div class="container">
+  <img src="c:\Users\KOMPUTER 10\Documents\WEB 1 zunianti\fto2.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+</style>
+</head>
+
+<body>
+<h2>Responsive Form</h2>
+<p>Resize the screen to see the form layout change!</p>
+
+<div class="responsive-form">
+
+ <form action="/action_page.php">
+   <label for="fname">First Name:</label>
+   <input type="text" id="fname" name="fname" placeholder="Your first name">
+
+   <label for="lname">Last Name:</label>
+   <input type="text" id="lname" name="lname" placeholder="Your last name">
+
+   <label for="country">Country:</label>
+   <select id="country" name="country">
+     <option value="australia">Australia</option>
+     <option value="canada">Canada</option>
+     <option value="usa">USA</option>
+    </select>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+
+</div>
+
+</style>
+</head>
+<body>
+
+<h2>Input Fields with Background Color and Text Color</h2>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" value="John">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora nisi quam incidunt et natus hic saepe iste reiciendis omnis odio iure vero eaque nihil, amet dolor iusto vitae quia recusandae!</p>
+</body>
+</html>
